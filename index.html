@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas con cypress</title>
+</head>
+<body>
+    <div class="contenedor" data-cy="container">
+        <h2 data-cy="titulo">Todo sobre nuestro blog de noticias.</h2>
+        <p data-cy="subtitulo" class="sorpresa" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil praesentium esse eligendi dignissimos ut est qui itaque molestias doloribus cumque accusantium, architecto facilis autem aliquam atque, necessitatibus reprehenderit aliquid veritatis.</p>
+        <button data-cy="btn" class="enviar">Agregar cosas</button>
+        <input data-cy="inputText" type="text" />
+        <input data-cy="inputNumber" type="number"/>
+        <select data-cy="selector">
+            <option>Perro</option>
+            <option>Leon</option>
+            <option>Jirafa</option>
+            <option>Elefante</option>
+            <option>Zorro</option>
+        </select>
+        <div >
+            <h2>Esto es una caja de sorpresas!!</h2>
+            <p>Este parrafo esta dentro del div</p>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                    <td>id</td>
+                    <td>Nombre</td>
+                    <td>email</td>
+                    <td>suscripcion</td>
+                    </tr>                
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>Facebook</td>
+                        <td>Facebook@facebook.com</td>
+                        <td>basic</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>Instagram</td>
+                        <td>Instagram@ing.com</td>
+                        <td>basic</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"/></td>
+                        <td>Twitter</td>
+                        <td>twitter@tw.com</td>
+                        <td>premium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+
+       const enviar = document.querySelector('.enviar');
+
+       enviar.addEventListener('click',()=>{
+           alert("Verificacion finalizada!!!");
+
+       })
+   
+
+
+
+    </script>
+</body>
+</html>
